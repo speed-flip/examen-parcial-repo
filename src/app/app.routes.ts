@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'pokedex-page',
+    loadComponent: () => import('./pokedex-page/pokedex-page.page').then( m => m.PokedexPagePage)
+  },
 ];

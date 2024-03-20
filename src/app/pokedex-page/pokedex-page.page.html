@@ -1,0 +1,11 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Pregunta 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item class="contenedor pokemon" *ngFor="let pokemon of pokemons">
+    <p>{{pokemon.name}}</p>
+  </ion-item>
+</ion-content>
